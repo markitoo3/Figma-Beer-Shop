@@ -1,6 +1,10 @@
-<h1>Beers</h1>
-
-  <ng-container *ngFor="let beer of beersService.beers$ | async">
-    <app-beer-card [beer]="beer"></app-beer-card>
-  </ng-container>
-
+ <div class="beer-page-container">
+  <app-side-bar></app-side-bar>
+  <div class="beer-page-content">
+    <ng-container *ngFor="let beer of beersService.beers$ | async">
+      <div class="beer-cards">
+      <app-beer-card [beer]="beer"></app-beer-card>
+    </div>
+    </ng-container>
+  </div>
+</div>

@@ -9,6 +9,8 @@ import { BeerDetailsPageRoutingModule } from './components/pages/beer-detals-pag
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './components/common/share-module.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 
@@ -25,7 +27,9 @@ import { SharedModule } from './components/common/share-module.module';
     BeerCartPageRoutingModule,
     BeersModule,
     BeerDetailsPageRoutingModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

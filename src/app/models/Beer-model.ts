@@ -7,7 +7,6 @@ export interface Beer {
   "badge": boolean,
   "badgeType": number,
   "productOfTheWeek": boolean;
-  "isFavourite": boolean;
   "tagline": string,
   "first_brewed": string,
   "description": string,
@@ -53,5 +52,6 @@ export interface Beer {
   "food_pairing": any[] | string,
   "brewers_tips": any[] | string,
   "contributed_by": any[] | string,
+  "isFavorite": boolean;
 
 }

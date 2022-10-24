@@ -13,7 +13,7 @@ export class BeerPageComponent implements OnInit {
   constructor(public beersService: BeersService) { }
 
   ngOnInit(): void {
-    this.beersService.getBeers().subscribe((beers) => {
+    this.beersService.getAllBeers().subscribe((beers) => {
       this.beersService.beers$.next(beers);
     })
   }
