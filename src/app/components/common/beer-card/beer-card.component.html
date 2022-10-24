@@ -2,25 +2,25 @@
   <div class="product-header">
     <div
     *ngIf="beer?.price! > beer?.abv!">
-      <img src="../../../../assets/images/Sale_Badge.svg" alt="">
+      <img src="assets/images/Sale_Badge.svg" alt="">
     </div>
     <div
     *ngIf="beer?.ibu! > beer?.ebc!" >
-      <img src="../../../../assets/images/ProductOfTheWeek_Badge.svg" alt="">
+      <img src="assets/images/ProductOfTheWeek_Badge.svg" alt="">
     </div>
     <div>
-      <img src="../../../../assets/images/Compare.svg" alt="">
+      <img src="assets/images/Compare.svg" alt="">
     </div>
     <div
     *ngIf="!beer?.isFavorite"
     class="toggle-favorite">
-      <img (click)="addToFavoriteBeers()" src="../../../../assets/images/Favorite.svg"
+      <img (click)="addToFavoriteBeers()" src="assets/images/Favorite.svg"
       alt="">
     </div>
     <div
     *ngIf="beer?.isFavorite"
     class="untoggle-favorite">
-      <img (click)="removeFromFavoriteBeers()" src="../../../../assets/images/heart.svg"
+      <img (click)="removeFromFavoriteBeers()" src="assets/images/heart.svg"
       alt="">
     </div>
   </div>
