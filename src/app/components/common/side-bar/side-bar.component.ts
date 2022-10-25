@@ -1,5 +1,6 @@
+import { preserveWhitespacesDefault } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-side-bar',
@@ -8,9 +9,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 })
 export class SideBarComponent implements OnInit {
 
-  filterOpen = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
