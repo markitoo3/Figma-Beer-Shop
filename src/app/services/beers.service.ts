@@ -61,4 +61,18 @@ export class BeersService {
     beer.price = Math.round(beer.ibu / 10);
     beer.isFavorite = false;
   }
+
+  /* addToCart(beer: Beer) {
+    let cartBeers = this.beers$.getValue();
+    let beerIndex = cartBeers.findIndex((b: Beer) => b.id === beer.id);
+    !beerIndex ? cartBeers.push(beer) : null
+    this.beers$.next(cartBeers);
+  } */
+
+  /* removeFromCart(beer: Beer) {
+    let cartBeers = this.beers$.getValue();
+    let beerIndex = cartBeers.findIndex((b: Beer) => b.id === beer.id);
+    beerIndex ? cartBeers.splice(beerIndex, 1) : null
+    this.beers$.next(cartBeers);
+  } */
 }
